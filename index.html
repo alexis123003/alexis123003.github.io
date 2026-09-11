@@ -1,35 +1,58 @@
-<div style="background-color: #ADD8E6;"length="500" >
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title style="color:cccdcd">Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Democracy Craft in order with photos</title>
+    <style>
+        body { text-align: center; }
+        .photo-set { display: none; }
+        .small-phone { display: block; }
+        img { width: 200px; height: 200px; object-fit: cover; }
+
+        @media (min-width: 321px) {
+            .small-phone { display: none; }
+            .normal-phone { display: block; }
+        }
+
+        @media (min-width: 426px) {
+            .normal-phone { display: none; }
+            .tablet { display: block; }
+        }
+
+        @media (min-width: 769px) {
+            .tablet { display: none; }
+            .large-screen { display: block; }
+        }
+    </style>
 </head>
 <body>
-	
-	  <h1>Welcome to my Portfolio</h1>
-	<ul>
-		<li><a href="https://tikineth.github.io/"> Vince's website </a></li>
-		<li><a href="https://jfreeman0716.github.io/"> Taimya's Website </a></li>
-		</ul>
-	<h3 text-align: center; style="color: #79004D;">HTML</h3>
-	<header>Projects:</header>
-	<ol>	
-	<li><a href="index_unit1.html">Unit 1</a><br></li>
-	<li><a href="index_unit2.html">Unit 2</a><br></li>
-	</ol><br>
-	<Header>Homework:</Header>
-	<ol>
-				<li><a href="exercise1.html">Unit 3</a><br></li>
-	</ol>
-	<h3 style="color: #4A68B1;"text-align: center;>PYTHON</h3>
-	<header>Projects:</header>
-	<ol>
-		
-	</ol>
-	<header>Homework:</header>
-	<ol>
-		<li><a href="Homework.py">Homework #1</a><br></li>
-	</ol>
-
+    <main>
+        <section class="photo-set small-phone">
+            <img src="images/img1.JPG" alt="Democracy craft photo 1">
+            <img src="images/img2.PNG" alt="Democracy craft photo 2">
+            <img src="images/img3.JPG" alt="Democracy craft photo 3">
+            <p>first week</p>
+        </section>
+        <section class="photo-set normal-phone">
+            <img src="images/img4.jpeg" alt="Democracy craft photo 4">
+            <img src="images/img5.jpeg" alt="Democracy craft photo 5">
+            <img src="images/img6.PNG" alt="Democracy craft photo 6">
+            <p>friends wedding and started running</p>
+        </section>
+        <section class="photo-set tablet">
+            <img src="images/img7.PNG" alt="Democracy craft photo 7">
+            <img src="images/img8.PNG" alt="Democracy craft photo 8">
+            <img src="images/img9.JPG" alt="Democracy craft photo 9">
+            <p>Won election with 3rd most highest votes and the second strike started</p>
+        </section>
+        <section class="photo-set large-screen">
+            <img src="images/img10.PNG" alt="Democracy craft photo 10">
+            <img src="images/img11.PNG" alt="Democracy craft photo 11">
+            <img src="images/img12.PNG" alt="Democracy craft photo 12">
+            <p>Whats happening now:D</p>
+        </section>
+    </main>
+    <footer>&copy; 2026 Kayleigh Harper</footer>
 </body>
 </html>
