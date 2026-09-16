@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap");
+
+:root {
+  --ink: #1c2333;
+  --ink-soft: #4b5468;
+  --paper: #fdfdfb;
+  --card: #ffffff;
+  --line: #e3e6ee;
+  --accent: #2563eb; /* matches the CI-stage blue in the diagrams */
+  --radius: 10px;
+
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: "Public Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  max-width: 76ch;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 6rem;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  margin-block: 0 1rem;
+  &::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 4px;
+    margin-top: 0.75rem;
+    border-radius: 2px;
+    background: var(--accent);
+  }
+}
+
+p {
+  color: var(--ink-soft);
+}
+
+strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.15em;
+}
+
+/* Inline code */
+code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: #eef1f7;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 0.1em 0.35em;
+}
+
+.mermaid-diagram,
+pre.mermaid-diagram {
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+  padding: 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow:
+    0 1px 2px rgb(28 35 51 / 0.04),
+    0 8px 24px rgb(28 35 51 / 0.05);
+  overflow-x: auto;
+}
+
+.mermaid-diagram svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Edge labels (the "Yes" / "No" boxes on links).
+   Mermaid injects its own per-diagram stylesheet with an id selector,
+   so !important is genuinely needed to win here. */
+.mermaid-diagram .edgeLabel,
+.mermaid-diagram .edgeLabel .labelBkg,
+.mermaid-diagram .edgeLabel rect {
+  background: var(--ink) !important;
+  fill: var(--ink) !important;
+  opacity: 1 !important;
+}
+
+.mermaid-diagram .edgeLabel,
+.mermaid-diagram .edgeLabel p,
+.mermaid-diagram .edgeLabel text {
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+.mermaid-diagram .edgeLabel {
+  padding: 0.15em 0.55em;
+  border-radius: 999px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
