@@ -1,0 +1,39 @@
+img {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+#borderimg  {  background-color: rgb(90, 204, 216);
+    color: rgb(63, 43, 19);
+    list-style-image: url("ul.jpg");
+border-image: url("border.jpg") 30 round;}
+
+
+
+body {
+    background-image: url("meep.jpg");
+    background-size: cover;
+}
+
+#wrapper {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    color: rgb(229, 185, 130);
+}
+
+.specialborder {
+    border: 9px solid rgb(22, 27, 28);
+    border-image: url("border2.jpg") 30 round;
+    background-color: transparent;
+    float: left;
+};
+
+
+a {
+    color: rgb(41, 28, 12);
+    text-decoration: none;
+    font-size: 30px;
+}
