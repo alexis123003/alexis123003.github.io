@@ -1,0 +1,43 @@
+
+#myId {
+    float: left;
+    background-color: #D2B48C;
+    font-family: Verdana, sans-serif;
+    font-size: large;
+    padding: 20px;
+}
+
+
+.headline {
+    color: #5a6a93; 
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    border-bottom: 2px dotted rgb(131, 171, 204); 
+}
+
+#myAbsoluteId {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px; 
+}
+
+.relativeClass {
+    position: relative;
+    left: 15px;
+    background-color: lightgreen;
+}
+
+#myFixedId {
+    position: fixed;
+    background-color: lightgray;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+ul {
+    list-style-image: url('mygif.gif');
+}
