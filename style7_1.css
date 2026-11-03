@@ -5,9 +5,7 @@ body{
   /*this width prevents the images from wrapping*/
   width: 1600px;
   background-repeat: no-repeat;
-  background-position: 200px 0;
-  
-}
+  background-position: 200px 0;}
 img{
   /*these properties together allow inline elements on the same row to have independent top and bottom margins/padding*/
   display:inline-block;
