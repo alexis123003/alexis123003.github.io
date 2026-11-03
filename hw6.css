@@ -1,0 +1,6 @@
+       body { background-image: url('hw6.png');
+             background-repeat: repeat-y;
+             background-position: left;}
+body {background-color:black}
+
+             a {color: white; font-size:large; text-decoration:none; text-align:center;}

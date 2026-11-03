@@ -1,0 +1,30 @@
+body {background-color:rgb(48, 74, 112);text-align:center;}
+h1 {color:rgb(255, 180, 180);}
+h2 {color:rgb(168, 255, 209);}
+h3 {color:rgb(187, 207, 255);}
+p {color:rgb(235, 222, 183);}
+
+#wrapper {width: 80%; 
+    margin: 0 auto; 
+    background-color: rgb(0, 53, 68);
+     box-shadow: 5px 5px 10px rgb(102, 227, 255);}
+
+div {width:90%; margin:auto;}
+
+.itembox {border: 10px rgb(200, 189, 255); 
+    border-radius: 10px;
+     box-shadow: 5px 5px 5px;
+      background-color:rgb(78, 79, 116);
+       color:rgb(190, 216, 255); 
+       padding: 10px;
+     margin: 10px;}
+
+.favorite {border: 10px rgb(233, 255, 189); 
+    border-radius: 10px;
+     box-shadow: 5px 5px 10px rgb(102, 227, 255);
+      background-color:rgb(93, 128, 180);
+       color:rgb(251, 179, 179); 
+       padding: 10px;
+     margin: 10px;}
+
+a {color:rgb(255, 159, 69);text-decoration:none;}

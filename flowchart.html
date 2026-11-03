@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit 4 Flowchart</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: "default",
+        flowchart: {
+          curve: "basis"
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Flow Chart of what Minecraft Democracy Craft is like</h1>
+      <p>
+        This flowchart shows a funny representation of how democracy might work in Minecraft.
+      </p>
+
+      <div class="mermaid-diagram mermaid" aria-label="Minecraft democracy flowchart">
+        flowchart TD
+          A([Start]) --> B["Opens the game up"]
+          B --> C["Creates a new world"]
+          C --> D{"Has everyone voted?"}
+          D -- Yes --> E["build bills"]
+          D -- No --> F["vote at the DOS building"]
+          F --> D
+          E --> G{"Helped any new players?"}
+          G -- no --> H["go help them"]
+          G -- yes --> I["help them more"]
+          I --> H
+          H --> J([Day is done])
+      </div>
+    </main>
+  </body>
+</html>
