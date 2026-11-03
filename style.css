@@ -1,3 +1,8 @@
+title { 
+      font-family: "Brush Script MT", "Lucida Handwriting", cursive; 
+      font-size: 24px; 
+      color: #dde4ff; 
+    }
 body { 
       font-family: Arial, sans-serif; 
       background-color: #232760e3; 
@@ -5,9 +10,33 @@ body {
       text-align: center; 
       padding: 50px; 
     }
-    h1 {font-size: 40;}
-    h4 {font-family: "Brush Script MT", "Lucida Handwriting", cursive;
-    font-size: 30px;}
+    h1 {font-size: 50px;
+       font-family: "times new roman";
+      }
+    
+      h2 {font-size: 40px;
+       font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+      }
+    
+      h4 {font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    font-size: 30px;
+  }
+    h3 {font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    font-size: 25px;
+  }
 
     ol { text-align: center; }
-a {text-decoration:none;}
+
+a {text-decoration:none; 
+   color: #dde4ff;
+   font-size: 20px;
+   font-family: "arial", sans-serif;
+   }
+   
+   a:hover {
+      color: #fff7b2;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.95), 0 0 22px rgba(255, 215, 0, 0.8), 0 0 38px rgba(255, 215, 0, 0.65);
+      filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.9));
+      transform: translateY(-1px) scale(1.02);
+      text-decoration: none;
+    }
