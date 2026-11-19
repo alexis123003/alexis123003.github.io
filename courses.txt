@@ -1,0 +1,5 @@
+Course Number: CS101, Room Number: 3004, Instructor: Haynes, Meeting Time: 8:00 a.m.
+Course Number: CS102, Room Number: 4501, Instructor: Alvarado, Meeting Time: 9:00 a.m.
+Course Number: CS103, Room Number: 6755, Instructor: Rich, Meeting Time: 10:00 a.m.
+Course Number: NT110, Room Number: 1244, Instructor: Burke, Meeting Time: 11:00 a.m.
+Course Number: CM241, Room Number: 1411, Instructor: Lee, Meeting Time: 1:00 p.m.
